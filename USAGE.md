@@ -221,6 +221,28 @@ create a quiz result email for customers who completed the health assessment qui
 
 ---
 
+## 11. Available shortcodes
+
+These are the exact tokens your marketing tool supports. Claude uses these automatically — never invents new ones.
+
+| Category | Key shortcodes |
+|----------|---------------|
+| **Customer** | `{{customer_first_name}}` `{{customer_name}}` `{{customer_email}}` `{{first_name}}` |
+| **Account** | `{{account_first_name}}` `{{account_url}}` `{{account_password}}` |
+| **Order** | `{{order_id}}` `{{order_total_formatted}}` `{{order_items_html}}` `{{order_url}}` `{{order_status}}` |
+| **Shipping** | `{{tracking_url}}` `{{carrier_name}}` `{{estimated_delivery_date}}` `{{shipping_address_formatted}}` |
+| **Products** | `{{product_name}}` `{{product_price}}` `{{product_image_url}}` `{{product_url}}` `{{items_html}}` |
+| **Cart** | `{{cart_total}}` `{{cart_url}}` `{{cart_items_html}}` |
+| **Payment** | `{{payment_method}}` `{{payment_last4}}` `{{refund_amount}}` `{{receipt_url}}` |
+| **Store** | `{{website_name}}` `{{website_url}}` `{{support_email}}` `{{current_year}}` `{{brand_logo}}` |
+| **Lab / Results** | `{{results_url}}` `{{formula_link}}` `{{review_url}}` |
+| **Appointments** | `{{appointment_date}}` `{{appointment_time}}` `{{practitioner_name}}` `{{reschedule_url}}` |
+| **Auth / Misc** | `{{login_url}}` `{{discount_code}}` `{{unsubscribe_url}}` |
+
+Full shortcode reference with descriptions: see `references/variables.md` inside the `.skill` file.
+
+---
+
 ## Quick reference card
 
 ```
