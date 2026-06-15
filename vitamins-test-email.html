@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{product_name}} — {{website_name}}</title>
+  <style>
+* { box-sizing: border-box; }
+body { margin:0; padding:0; background:#f5f5f7; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; color:#18181b; -webkit-font-smoothing: antialiased; }
+table { border-collapse: collapse; }
+a { color:#0C8097; }
+.wrapper { width:100%; background:#f5f5f7; padding:40px 14px; }
+.container { width:100%; max-width:600px; margin:0 auto; background:#ffffff; border-radius:20px; overflow:hidden; }
+.header { padding:28px 40px; border-bottom:1px solid #f0f0f2; }
+.hero { background:linear-gradient(180deg,#ffffff 0%,#eef9fb 100%); padding:54px 40px 46px; text-align:center; }
+.eyebrow { font-size:11px; font-weight:800; letter-spacing:1.7px; text-transform:uppercase; color:#0C8097; margin:0 0 16px; }
+h1 { margin:0 0 14px; font-size:34px; line-height:1.15; letter-spacing:-0.8px; font-weight:800; color:#18181b; }
+.hero p { margin:0 auto 28px; max-width:430px; color:#52525b; font-size:15px; line-height:1.65; }
+.btn { display:inline-block; background:#0C8097; color:#ffffff !important; text-decoration:none; font-size:15px; font-weight:800; letter-spacing:.1px; padding:16px 34px; border-radius:999px; }
+.content { padding:38px 40px; }
+.copy p { margin:0 0 18px; color:#27272a; font-size:16px; line-height:1.65; }
+.copy p:last-child { margin-bottom:0; }
+.section { padding:36px 40px; }
+.info-card { background:#f9fafb; border:1px solid #ececef; border-radius:16px; padding:24px; }
+.feature-row { width:100%; }
+.feature-box { width:33.333%; padding:0 6px; vertical-align:top; }
+.feature-inner { background:#f9fafb; border-radius:14px; padding:18px 14px; text-align:center; }
+.feature-icon { font-size:22px; line-height:1; margin-bottom:9px; }
+.feature-title { font-size:13px; line-height:1.35; font-weight:800; color:#18181b; }
+.feature-text { margin-top:4px; font-size:11px; line-height:1.45; color:#71717a; }
+.center { text-align:center; }
+.footer { padding:30px 40px; text-align:center; background:#ffffff; }
+.footer p { margin:0 0 12px; color:#8b8b94; font-size:12px; line-height:1.7; }
+.footer a { color:#0C8097; text-decoration:none; }
+@media only screen and (max-width: 620px) {
+  .wrapper { padding:0; }
+  .container { border-radius:0; }
+  .header, .hero, .content, .section, .footer { padding-left:24px !important; padding-right:24px !important; }
+  .hero { padding-top:44px !important; padding-bottom:40px !important; }
+  h1 { font-size:29px !important; }
+  .feature-box { display:block !important; width:100% !important; padding:0 0 10px !important; }
+}
+  </style>
+</head>
+<body>
+
+<!--
+=======================================================
+  EMAIL CONFIGURATION -- edit values here to customise
+  Change these for each campaign, no need to edit HTML
+=======================================================
+
+  SEND TO:        {{customer_first_name}}                        (mail-merge -- set in your ESP)
+
+  PRODUCT:        {{product_name}}           = Vitamins Test (B12, Folic Acid, D, E & Q10)
+  CTA URL:        {{cta_url}}                = https://custom-supplements.com/vitamins-test
+  CTA LABEL:      {{cta_label}}              = Order my vitamins test
+
+  BRAND:          {{website_name}}           = Custom Supplements
+  SUPPORT EMAIL:  {{support_email}}          = support@custom-supplements.com
+  YEAR:           {{current_year}}           = 2026
+  UNSUBSCRIBE:    {{unsubscribe_url}}                            (set in your ESP)
+
+  VIDEO URL:      {{video_url}}              = https://www.youtube.com/watch?v=REPLACE_VIDEO_ID
+  VIDEO THUMB:    {{video_thumbnail_url}}    = https://img.youtube.com/vi/REPLACE_VIDEO_ID/maxresdefault.jpg
+
+  SENDER NAME:    {{sender_name}}            = Patrik Johansson
+  SENDER TITLE:   {{sender_title}}           = CEO and Founder
+  SENDER PHOTO:   {{sender_photo_url}}       = https://REPLACE_WITH_PHOTO_URL
+  PERSONAL LI:    {{sender_linkedin_personal_url}} = https://linkedin.com/in/REPLACE
+  LINKEDIN:       {{social_linkedin_url}}    = https://linkedin.com/company/REPLACE
+  INSTAGRAM:      {{social_instagram_url}}   = https://instagram.com/REPLACE
+  FACEBOOK:       {{social_facebook_url}}    = https://facebook.com/REPLACE
+  YOUTUBE:        {{social_youtube_url}}     = https://youtube.com/@REPLACE
+  WEBSITE:        {{social_website_url}}     = https://custom-supplements.com
+
+=======================================================
+-->
+
+  <div class="wrapper">
+    <table role="presentation" class="container" align="center" cellpadding="0" cellspacing="0">
+
+      <!-- HEADER / LOGO -->
+      <tr><td class="header">
+        <div class="logo-wrap">
+          <svg width="136" height="36" viewBox="0 0 136 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1976_10253)">
+            <path d="M28.4463 18.6709L32.5392 11.9714L32.3579 11.8174L28.1699 18.6709L28.7966 19.1985L28.8899 19.0445L28.4463 18.6709Z" fill="#36A9CA"/>
+            <path d="M28.8309 19.3954L28 18.6983L32.3253 11.6182L32.7126 11.9434L28.6179 18.6446L29.0633 19.0166L28.8309 19.3954Z" fill="#027FA3"/>
+            <path d="M29.8274 20.9993L36.3567 13.4695L36.2212 13.3086L29.5527 20.9993L30.0932 21.6445L30.2322 21.4819L29.8274 20.9993Z" fill="#36A9CA"/>
+            <path d="M30.0902 21.8462L29.3789 20.9968L36.2216 13.1055L36.5279 13.4705L29.9986 21.0003L30.4035 21.4829L30.0902 21.8462Z" fill="#027FA3"/>
+            <path d="M20.8234 12.2882L21.3005 12.0616L21.2618 11.9492L20.5488 12.2882L23.4517 20.7089L23.6894 20.5965L20.8234 12.2882Z" fill="#36A9CA"/>
+            <path d="M23.374 20.8898L20.3848 12.2201L21.3389 11.7686L21.4639 12.1284L20.9868 12.355L23.851 20.6632L23.374 20.8898Z" fill="#027FA3"/>
+            <path d="M17.9036 13.0409L18.3753 12.7745L18.3225 12.6465L17.6289 13.0409L21.6215 22.7001L21.8451 22.5738L17.9036 13.0409Z" fill="#36A9CA"/>
+            <path d="M21.5558 22.8889L17.4629 12.9858L18.3871 12.46L18.5403 12.8301L18.0702 13.0965L22.01 22.6294L21.5558 22.8889Z" fill="#027FA3"/>
+            <path d="M15.8779 14.7236L16.355 14.4952L16.3145 14.3828L15.6016 14.7236L18.7879 23.8742L19.0255 23.7618L15.8779 14.7236Z" fill="#36A9CA"/>
+            <path d="M18.7118 24.0559L15.4375 14.6561L16.3916 14.2012L16.5184 14.561L16.0395 14.7893L19.1872 23.8293L18.7118 24.0559Z" fill="#027FA3"/>
+            <path d="M14.1633 16.6506L14.6492 16.4828L14.628 16.3945L13.8887 16.6506L15.5892 23.4348L15.8427 23.3466L14.1633 16.6506Z" fill="#36A9CA"/>
+            <path d="M15.4948 23.6062L13.7344 16.5676L14.7254 16.2217L14.8117 16.5676L14.3259 16.7406L16.0035 23.4384L15.4948 23.6062ZM14.0442 16.7337L15.6814 23.2654L14.0459 16.7354L14.0442 16.7337Z" fill="#027FA3"/>
+            <path d="M4.70021 21.3656L9.37411 15.7731L9.23503 15.6123L4.42383 21.3656L4.97483 21.9987L5.11039 21.8378L4.70021 21.3656Z" fill="#36A9CA"/>
+            <path d="M4.97724 22.2013L4.25195 21.3676L9.23212 15.4102L9.54902 15.7716L4.87338 21.3641L5.28355 21.8363L4.97724 22.2013Z" fill="#027FA3"/>
+            <path d="M2.28829 19.5695L8.64864 13.3456L8.53596 13.1865L2.01367 19.5695L2.50659 20.2614L2.66854 20.104L2.28829 19.5695Z" fill="#36A9CA"/>
+            <path d="M2.48962 20.4633L1.8418 19.5535L8.55422 12.9854L8.8218 13.3608L2.46145 19.5828L2.8417 20.1174L2.48962 20.4633Z" fill="#027FA3"/>
+            <path d="M21.9512 23.5839C22.9406 22.9162 23.7539 22.0115 24.4826 21.0151C25.0513 20.2419 25.5671 19.4116 26.067 18.5934C26.5511 17.815 27.0264 17.0505 27.5299 16.3568C28.4911 15.0318 29.5562 13.9593 30.9856 13.5182C34.2335 12.5149 37.742 15.5213 37.7772 15.5507L38.6979 14.1012L38.6698 14.0769C38.2754 13.7396 34.4448 10.5827 30.593 11.7693C29.0333 12.2503 27.8556 13.2847 26.8504 14.5371C26.1667 15.4225 25.5366 16.3467 24.9632 17.3047C24.9157 17.3809 24.8682 17.457 24.8224 17.533C24.2626 18.4308 23.7187 19.3044 23.1307 20.0776C22.5908 20.8266 21.9295 21.4834 21.1731 22.0219C19.7225 23.0027 17.9938 23.0598 16.3619 22.5253L16.1982 22.4682C16.0908 22.4301 15.9835 22.3886 15.8761 22.3453C15.7687 22.3021 15.6613 22.2554 15.5557 22.207C15.2894 22.0833 15.0297 21.9465 14.7775 21.797C13.5419 21.0604 12.5013 20.0468 11.7409 18.839C10.3325 16.5713 9.58968 13.7327 9.10024 11.5151L7.99119 11.8541L7.60742 11.97L7.618 12.0202C7.64088 12.1188 7.66198 12.2191 7.68665 12.3212C7.71131 12.4232 7.7377 12.5495 7.76587 12.6671C8.29401 14.9159 9.08264 17.6299 10.4962 19.9029C12.8605 23.7032 18.1434 26.1509 21.9512 23.5839Z" fill="#027FA3"/>
+            <path d="M21.9364 13.3264C26.2899 15.1168 29.8089 23.1258 29.8459 23.2122L30.6363 22.7417L31.219 22.3958C31.043 21.9737 26.6666 12.017 20.9928 11.2213C17.766 10.7646 15.3349 13.8263 12.9865 16.7861C11.1258 19.1316 9.36711 21.3458 7.52927 21.3752C3.43455 21.4409 1.42065 17.4658 1.33791 17.2981L0.234134 18.0384L0 18.1958C0.0792184 18.3567 1.58436 21.3596 4.62458 22.6276C5.54993 23.0126 6.54743 23.2018 7.55216 23.1828C10.0413 23.143 12.1098 20.538 14.1079 18.0194C16.1957 15.3883 18.354 12.6691 20.7974 13.0151C21.1891 13.0704 21.5719 13.175 21.9364 13.3264Z" fill="#027FA3"/>
+            <path d="M14.1168 18.0175C14.6749 17.3152 15.2382 16.606 15.8104 15.9521C15.0674 16.7479 14.3404 17.6629 13.6239 18.5658C13.0746 19.2578 12.5219 19.9497 11.9551 20.6036C12.6944 19.8113 13.4109 18.9084 14.1168 18.0175Z" fill="#36A9CA"/>
+            <path d="M1.98347 16.9927C2.14554 17.3048 2.33151 17.6043 2.53975 17.8887L3.20695 17.2366C3.35772 13.7044 4.70374 10.3227 7.03172 7.62716C9.35975 4.93168 12.5365 3.07663 16.0589 2.35594C19.5812 1.63524 23.2475 2.09013 26.4769 3.64851C29.7064 5.2069 32.3142 7.77968 33.8873 10.9592C34.5789 11.0983 35.2539 11.3082 35.9012 11.5854C34.4501 7.91616 31.7788 4.83709 28.3212 2.84874C24.8637 0.860398 20.8234 0.0796666 16.8571 0.633479C12.8908 1.18729 9.23184 3.04308 6.47487 5.89915C3.71796 8.75521 2.02522 12.4436 1.67188 16.3648L1.98347 16.9927Z" fill="#36A9CA"/>
+            <path d="M35.9957 15.1572L35.3848 15.8612C35.9019 19.7573 34.9309 23.7034 32.6593 26.9369C30.3878 30.1704 26.9771 32.4618 23.0863 33.3681C19.1956 34.2743 15.101 33.7313 11.5941 31.8438C8.0871 29.9563 5.4167 26.8585 4.0989 23.1489C3.36252 22.81 2.67618 22.3748 2.05859 21.855C3.08771 26.202 5.77327 29.9962 9.56276 32.4568C13.3522 34.9174 17.9573 35.8572 22.4305 35.083C26.9037 34.3087 30.9048 31.8792 33.6105 28.2943C36.3162 24.7095 37.5207 20.242 36.9762 15.8111C36.6615 15.5761 36.3341 15.3579 35.9957 15.1572Z" fill="#36A9CA"/>
+            <path d="M50.028 22.8792C49.6144 23.2882 49.1198 23.6096 48.5747 23.8232C48.0297 24.0369 47.4458 24.1382 46.8593 24.1211C43.9088 24.1211 42.4336 22.6715 42.4336 19.7724V16.0429C42.4336 13.1438 43.9088 11.6942 46.8593 11.6942C47.4458 11.6771 48.0297 11.7785 48.5747 11.9921C49.1198 12.2058 49.6144 12.5271 50.028 12.9363L50.4082 11.6942H52.5577V24.1211C52.5577 27.4354 50.8718 29.0926 47.5 29.0926H43.7046V26.6069H47.5C49.1853 26.6069 50.028 25.7783 50.028 24.1211V22.8792ZM46.8593 14.18C45.5953 14.18 44.9633 14.801 44.9633 16.0429V19.7724C44.9633 21.0144 45.5953 21.6354 46.8593 21.6354C48.1232 21.6354 49.1795 21.4284 50.028 21.0144V14.7941C49.1842 14.3847 48.1303 14.18 46.8663 14.18H46.8593Z" fill="#027FA3"/>
+            <path d="M56.5281 18.9024V19.7673C56.5281 21.0093 57.16 21.6303 58.424 21.6303H63.4835V24.116H58.424C55.4735 24.116 53.998 22.6665 53.998 19.7673V16.043C53.998 13.1439 55.4735 11.6943 58.424 11.6943H59.6895C62.64 11.6943 64.1155 13.1439 64.1155 16.043V18.9024H56.5281ZM56.5281 16.9131H61.5876V16.0482C61.5876 14.8063 60.9546 14.1852 59.6895 14.1852H58.424C57.16 14.1852 56.5281 14.8063 56.5281 16.0482V16.9131Z" fill="#027FA3"/>
+            <path d="M69.9842 19.7733C69.9842 21.0152 70.6162 21.6362 71.8801 21.6362H73.1457V24.122H71.8801C68.9297 24.122 67.4542 22.6724 67.4542 19.7733V14.1808H65.5566V11.6951H67.4542V7.96733L69.9842 6.72363V11.6951H73.1527V14.1808H69.9842V19.7733Z" fill="#027FA3"/>
+            <path d="M83.6681 6.72363V9.20936H79.2406V24.122H76.7127V9.20936H72.2852V6.72363H83.6681Z" fill="#36A9CA"/>
+            <path d="M85.3381 18.9024V19.7673C85.3381 21.0093 85.9706 21.6303 87.2356 21.6303H92.2935V24.116H87.2356C84.2841 24.116 82.8086 22.6665 82.8086 19.7673V16.043C82.8086 13.1439 84.2841 11.6943 87.2356 11.6943H88.4947C91.4451 11.6943 92.9206 13.1439 92.9222 16.043V18.9024H85.3381ZM85.3381 16.9131H90.3976V16.0482C90.3976 14.8063 89.7651 14.1852 88.5001 14.1852H87.2356C85.9695 14.1852 85.337 14.8063 85.3381 16.0482V16.9131Z" fill="#36A9CA"/>
+            <path d="M94.3691 24.1212V21.6355H100.058C100.901 21.6355 101.323 21.2215 101.325 20.3935C101.325 19.4824 100.903 19.0269 100.058 19.0269H98.1626C95.6336 19.0269 94.3691 17.8253 94.3691 15.422C94.3691 12.9358 95.6336 11.6932 98.1626 11.6943H103.854V14.1801H98.1626C97.3201 14.1801 96.8981 14.5941 96.897 15.422C96.897 16.1682 97.319 16.5412 98.1626 16.5412H100.058C102.588 16.5412 103.853 17.8253 103.854 20.3935C103.854 22.8798 102.589 24.1224 100.058 24.1212H94.3691Z" fill="#36A9CA"/>
+            <path d="M109.72 19.7733C109.72 21.0152 110.353 21.6362 111.618 21.6362H112.882V24.122H111.618C108.666 24.122 107.191 22.6724 107.191 19.7733V14.1808H105.295V11.6951H107.191V7.96733L109.72 6.72363V11.6951H112.889V14.1808H109.72V19.7733Z" fill="#36A9CA"/>
+            <path d="M116.854 18.9024V19.7673C116.854 21.0093 117.486 21.6303 118.75 21.6303H123.809V24.116H118.75C115.799 24.116 114.324 22.6665 114.324 19.7673V16.043C114.324 13.1439 115.799 11.6943 118.75 11.6943H120.016C122.966 11.6943 124.441 13.1439 124.441 16.043V18.9024H116.854ZM116.854 16.9131H121.912V16.0482C121.912 14.8063 121.28 14.1852 120.016 14.1852H118.75C117.486 14.1852 116.854 14.8063 116.854 16.0482V16.9131Z" fill="#36A9CA"/>
+            <path d="M133.471 6.72363H135.999V24.122H133.85L133.471 22.8799C133.057 23.2888 132.563 23.61 132.018 23.8236C131.473 24.0372 130.889 24.1388 130.303 24.122C127.352 24.122 125.877 22.6724 125.877 19.7733V16.0438C125.877 13.1447 127.352 11.6951 130.303 11.6951C130.889 11.6782 131.473 11.7798 132.018 11.9934C132.563 12.207 133.057 12.5282 133.471 12.9371V6.72363ZM133.471 21.0152V14.7949C132.629 14.3809 131.573 14.1739 130.303 14.1739C129.033 14.1739 128.401 14.7949 128.407 16.0369V19.7663C128.407 21.0083 129.039 21.6293 130.303 21.6293C131.567 21.6293 132.623 21.4269 133.471 21.0221V21.0152Z" fill="#36A9CA"/>
+            </g>
+            <defs><clipPath id="clip0_1976_10253"><rect width="136" height="36" fill="white"/></clipPath></defs>
+          </svg>
+        </div>
+      </td></tr>
+
+      <!-- HERO -->
+      <tr><td class="hero">
+        <p class="eyebrow">Your results are in</p>
+        <h1>Find out what your body is really missing</h1>
+        <p>Fatigue, brain fog, low mood — they often come down to a handful of key vitamins. The {{product_name}} checks your levels so you finally know what's going on.</p>
+        <a class="btn" href="{{cta_url}}">{{cta_label}}</a>
+      </td></tr>
+
+      <!-- BODY COPY -->
+      <tr><td class="content copy">
+        <p>Hi {{customer_first_name}},</p>
+        <p>Most people don't realise they're running low on key vitamins until the symptoms have already crept in — the afternoon energy crash, the irritability, the restless nights. The tricky part? B12, Folic Acid, D, E, and Q10 deficiencies all look very similar on the surface.</p>
+        <p>The {{product_name}} measures all five from a single finger-prick sample at home. You'll get a clear, personalised report within days showing exactly where your levels sit and what they mean for your health.</p>
+        <p>No guessing. No expensive GP appointments. Just the numbers — and what to do with them.</p>
+      </td></tr>
+
+      <!-- VIDEO THUMBNAIL BLOCK -->
+      <tr><td class="section" style="padding-top:0; padding-bottom:32px;">
+        <p style="margin:0 0 12px; font-size:11px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; color:#0C8097; text-align:center;">See how it works</p>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr><td align="center">
+            <a href="{{video_url}}" target="_blank"
+               style="display:block; position:relative; text-decoration:none; max-width:520px; margin:0 auto; border-radius:14px; overflow:hidden; line-height:0; background:#d0eef5;">
+              <img src="{{video_thumbnail_url}}"
+                   alt="Watch: How the {{product_name}} works"
+                   width="520"
+                   style="display:block; width:100%; border-radius:14px;" />
+              <span style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+                           display:inline-block; width:72px; height:72px; background:rgba(220,0,0,0.92);
+                           border-radius:50%; text-align:center; line-height:72px; font-size:30px; color:#fff;">
+                &#9654;
+              </span>
+            </a>
+          </td></tr>
+        </table>
+      </td></tr>
+
+      <!-- FEATURE BOXES -->
+      <tr><td class="section" style="padding-top:0;">
+        <table role="presentation" class="feature-row"><tr>
+          <td class="feature-box">
+            <div class="feature-inner">
+              <div class="feature-icon">5-in-1</div>
+              <div class="feature-title">comprehensive</div>
+              <div class="feature-text">Tests B12, Folic Acid, D, E &amp; Q10 in one simple kit.</div>
+            </div>
+          </td>
+          <td class="feature-box">
+            <div class="feature-inner">
+              <div class="feature-icon">&#127968;</div>
+              <div class="feature-title">at-home test</div>
+              <div class="feature-text">Finger-prick sample, free return envelope, results in days.</div>
+            </div>
+          </td>
+          <td class="feature-box">
+            <div class="feature-inner">
+              <div class="feature-icon">4.8/5</div>
+              <div class="feature-title">rated</div>
+              <div class="feature-text">Thousands of customers have tested and transformed their wellbeing.</div>
+            </div>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <!-- INFO CARD CTA -->
+      <tr><td class="section center" style="padding-top:0;">
+        <div class="info-card" style="background:linear-gradient(135deg,#e4f7fa 0%,#f6fcfd 100%); border-color:#d6eef2;">
+          <p style="margin:0 0 22px; font-size:15px; line-height:1.65; color:#3f3f46;">Your personalised vitamin report is one test away. Order today and get answers in as little as 48 hours.</p>
+          <a class="btn" href="{{cta_url}}">{{cta_label}}</a>
+        </div>
+      </td></tr>
+
+      <!-- SIGNATURE BLOCK -->
+      <tr><td style="padding:0 40px 32px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+               style="border-top:1px solid #f0f0f2; padding-top:28px;">
+          <tr>
+            <td style="vertical-align:top; padding-right:18px; width:88px;">
+              <img src="{{sender_photo_url}}"
+                   alt="{{sender_name}}"
+                   width="80"
+                   style="display:block; width:80px; height:80px; border-radius:10px; object-fit:cover;" />
+            </td>
+            <td style="vertical-align:top;">
+              <p style="margin:0 0 3px; font-size:15px; font-weight:800; color:#18181b;">{{sender_name}}</p>
+              <p style="margin:0 0 14px; font-size:13px; font-style:italic; color:#52525b;">{{sender_title}}</p>
+              <p style="margin:0 0 14px; font-size:13px; color:#52525b; line-height:1.5;">
+                Follow our journey through my personal
+                <a href="{{sender_linkedin_personal_url}}" style="color:#0C8097;">LinkedIn here</a>.
+              </p>
+              <p style="margin:0; font-size:13px; color:#52525b;">Corporate links below &#128071;</p>
+              <p style="margin:6px 0 0; font-size:13px; line-height:2;">
+                <a href="{{social_linkedin_url}}"  style="color:#0C8097; text-decoration:none;">LinkedIn</a>
+                &nbsp;|&nbsp;
+                <a href="{{social_instagram_url}}" style="color:#0C8097; text-decoration:none;">Instagram</a>
+                &nbsp;|&nbsp;
+                <a href="{{social_facebook_url}}"  style="color:#0C8097; text-decoration:none;">Facebook</a>
+                &nbsp;|&nbsp;
+                <a href="{{social_youtube_url}}"   style="color:#0C8097; text-decoration:none;">YouTube</a>
+                &nbsp;|&nbsp;
+                <a href="{{social_website_url}}"   style="color:#0C8097; text-decoration:none;">Website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <!-- FOOTER -->
+      <tr><td class="footer">
+        <p>Questions? <a href="mailto:{{support_email}}">Contact us</a> — we are here to help.</p>
+        <p style="margin-top:28px;">&copy; {{current_year}} {{website_name}}. All rights reserved.<br>
+        No longer want to receive these emails? <a href="{{unsubscribe_url}}">Unsubscribe</a></p>
+      </td></tr>
+
+    </table>
+  </div>
+</body>
+</html>
